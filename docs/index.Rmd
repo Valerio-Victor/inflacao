@@ -1,5 +1,5 @@
 ---
-title: 'TEMA01 - TAXA DE INFLAÇÃO'
+title: 'TEMA 02 - TAXA DE INFLAÇÃO'
 subtitle: 'ECN001 - IEPG20'
 author: 'Prof. Dr. Victor Valerio'
 institute: 'UNIVERSIDADE FEDERAL DE ITAJUBÁ'
@@ -228,11 +228,8 @@ widgetframe::frameWidget(difusao, width = '100%', height = '100%')
 
 ## INTRODUÇÃO
 
-
-**REVISÃO DE CONCEITOS**
-  
 - Nós já sabemos como calcular um número índice a partir de qualquer série de dados, como no exemplo
-já apresentado ainda na aula de Fluxo Circular da Renda:
+do Fluxo Circular da Renda:
   
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
@@ -296,13 +293,9 @@ knitr::kable(ex_numero_indice,
 
 
 ## INTRODUÇÃO
-
-
-**CONCEITOS**
   
-  
-- Problema prático com duas variáveis. Qual procedimento deveria ser aplicado para criar um índice 
-único representativo das duas colunas de valores (que, por sua vez, representam duas variáveis):
+- Qual procedimento deveria ser aplicado para criar um índice único 
+representativo das duas colunas de valores (duas variáveis diferentes):
 
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
@@ -352,8 +345,8 @@ knitr::kable(ex_numero_indice,
 ```
 
 
-- Uma proposta inicial seria somar as duas variáveis (A e B) para, então, transformar a série criada
-a partir da soma em um número índice.
+- Proposta Inicial: Somar as duas variáveis (A e B) para, então, transformar 
+a série criada a partir da soma em um número índice.
 
 
 
@@ -368,10 +361,6 @@ a partir da soma em um número índice.
 
 ## INTRODUÇÃO
 
-
-**CONCEITOS**
-  
-  
 - Abaixo são apresentados cada um dos passos a serem tomados:
 
 
@@ -443,8 +432,8 @@ knitr::kable(ex_numero_indice,
 ```
 
 
-- O número índice criado não é representativo da série (pois a variável A, de maior valor, possui
-maior "influência" no cálculo da variação percentual).
+- O número índice criado não é representativo da série (pois a variável A, de 
+maior valor, possui maior "influência" no cálculo da variação percentual).
 
 
 
@@ -459,13 +448,8 @@ maior "influência" no cálculo da variação percentual).
 
 ## INTRODUÇÃO
 
-
-**CONCEITOS**
-  
-  
-- Uma boa maneira seria ponderar a importância de cada uma das variáveis a partir de algum critério,
-por exemplo, como são preços de produtos, pode-se adotar como termo de ponderação a quantidade 
-consumida:
+- Alternativa: ponderar a importância de cada uma das variáveis a partir da 
+quantidade consumida:
 
 
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
@@ -542,15 +526,8 @@ knitr::kable(ex_numero_indice,
 
 ```
 
-- Agora, como a variável de menor preço possui maior importância na destinação dos recursos familiares
-seu impacto é melhor representado pelo índice criado. De fato, é assim que é construído um **índice de
-preços**.
-
-
-
-
-
-
+- Agora o impacto de cada variação de preço é melhor representado.
+De fato, mas ainda é possível isolar o efeito da variação de preço.
 
 
 ---
@@ -559,20 +536,101 @@ preços**.
 
 ## INTRODUÇÃO
 
+- Ao ponderar a importância de cada uma das variáveis a partir da 
+quantidade consumida (fixamos a quantidade inicial):
 
-**CONCEITOS**
+
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center'}
+
+
+library(magrittr)
+
+
+library(kableExtra)
+
+
+ex_numero_indice <- data.frame(
   
-</br>
+  DATAS = c(2015, 2016, 2017, 2018, 2019, 2020),
+  
+  A = c('R$ 100', 
+        'R$ 110', 
+        'R$ 121', 
+        'R$ 133,1', 
+        'R$ 146,41', 
+        'R$ 161,05'),
+  
+  QA = c('2',
+         '2',
+         '2,2',
+         '2,5',
+         '2,1',
+         '2,8'), 
+  
+  B = c('R$ 5', 
+        'R$ 10', 
+        'R$ 20', 
+        'R$ 40', 
+        'R$ 80', 
+        'R$ 160'),
+  
+  QB = c('22',
+         '22,3',
+         '23,4',
+         '21',
+         '25',
+         '26'), 
+  
+  SOMA = c('R$ 100 x 2 +  R$ 5 x 22 = 310', 
+           'R$ 110 x 2 +  R$ 10 x 22 = 440', 
+           'R$ 121 x 2 +  R$ 20 x 22 = 682', 
+           'R$ 133,1 x 2 +  R$ 40 x 22 = 1146,2', 
+           'R$ 146,41 x 2 +  R$ 80 x 22 = 2052,8', 
+           'R$ 161,05 x 2 +  R$ 160 x 22 = 3842,1'),
+  
+  ÍNDICE = c(100,
+             141.9,
+             220,
+             369.7,
+             662.2,
+             1239.4)
+  
+)
+
+
+knitr::kable(ex_numero_indice, 
+             
+             escape = FALSE,
+    
+             format = 'html',
+             
+             align = c('c', 'c', 'c', 'c', 'c', 'l', 'c')) %>%
+  
+  kable_styling(bootstrap_options = 'striped', font_size = 24)
+  
+
+
+
+
+```
+
+- Assim, chega-se ao **Índice de Preços**.
+
+
+
+
+
+---
+<div style="text-align: justify">
+
+## INTRODUÇÃO
   
 - O Brasil possui diversos **índices de inflação** mensurados periodicamente, cada um com a sua
 finalidade, são exemplos:
 
-  - **Índice Nacional de Preços ao Consumidor (INPC)**: medir as variações de preços da cesta de 
-  consumo das populações assalariadas e com baixo rendimento;
+  - **Índice Nacional de Preços ao Consumidor (INPC)**
 
-  - **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**: medir as variações de preços referentes 
-  ao consumo pessoal;
-  
+  - **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**
   
 - Neste curso vamos nos concentrar  no **IPCA**, entretanto, exceto especifidades de cálculos as 
 formas de análise são similares.
@@ -589,25 +647,16 @@ formas de análise são similares.
 ---
 <div style="text-align: justify">
 
-
 ## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-</br>
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
-  - Efetua a produção contínua e sistemática de índices de preços ao consumidor, tendo como **unidade 
-  de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos
-  e domicílios (para levantamento de aluguel e condomínio)**; 
+  - Possui como **unidade de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos e domicílios (para 
+  levantamento de aluguel e condomínio)**; 
   
   - O período de coleta do IPCA estende-se, em geral, do dia **01 a 30 do mês de referência**;
   
-  - A população-objetivo do IPCA abrange as famílias com rendimentos mensais compreendidos entre **1 
-  (um) e 40 (quarenta) salários-mínimos**, qualquer que seja a fonte de rendimentos, e residentes nas 
-  áreas urbanas das regiões.
+  - A população-objetivo do IPCA abrange as famílias com rendimentos mensais compreendidos entre **1 (um) e 40 (quarenta) salários-mínimos**, qualquer que seja a fonte de rendimentos, e residentes nas áreas urbanas das regiões.
   
   
   
@@ -622,22 +671,18 @@ formas de análise são similares.
 
 ## INTRODUÇÃO
 
-
-**CONCEITOS**
-  
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
   - A periodicidade do **IPCA** é **mensal**;
   
-  - Abrangendo as regiões metropolitanas de **Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Rio de     Janeiro, São Paulo, Curitiba, Vitória e Porto Alegre, Brasília e municípios de Goiânia e Campo Grande**.
+  - Abrangendo as regiões metropolitanas de **Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Rio de Janeiro, São Paulo, Curitiba, Vitória e Porto Alegre, Brasília e municípios de Goiânia e Campo Grande**.
   
-  - É constituído de forma hierarquizada, sendo que, seu cômputo é divido grupos (9), subgrupos (19), 
+  - É constituído de forma hierarquizada: Cômputo divido grupos (9), subgrupos (19), 
   itens (51) e subitens (377). 
 
-  - O peso de cada um desses grupos no índice cheio é definido mensalmente, de acordo com os gastos das  
-  famílias em diferentes bens e serviços. Estes gastos, por sua vez, são captados pela **Pesquisa de 
-  Orçamento Familiar (POF)**.
+  - O peso de cada um desses grupos no índice cheio é definido mensalmente, de 
+  acordo com a **Pesquisa de Orçamento Familiar (POF)**.
 
 
 
@@ -645,17 +690,9 @@ formas de análise são similares.
 
   
 ---
-<div style="text-align: justify">
-
-
 ## INTRODUÇÃO
-  
 
-**CONCEITOS**
-
-
-- Desde agosto de 1999 são 9 grupos:
-
+.pull-left[
   1) **Alimentos e Bebidas**;
   
   2) **Habitação**;
@@ -665,7 +702,8 @@ formas de análise são similares.
   4) **Vestuário**;
   
   5) **Transportes**;
-  
+]
+.pull-right[ 
   6) **Comunicação**;
   
   7) **Saúde e Cuidados Pessoais**;
@@ -673,7 +711,7 @@ formas de análise são similares.
   8) **Despesas Pessoais**;
   
   9) **Educação**.
-
+]
 
 
 
@@ -769,16 +807,11 @@ name: conceitoipca
 ## CONCEITO DE INFLAÇÃO
 
 
-</br>
-
-
 - **INFLAÇÃO**:
 
   - A Inflação corresponde a uma situação em que há um aumento generalizado e persistente no nível de 
   preços (pode ser captada pelos índices de preços);
 
-
-</br>
 
 
 - **HIPERINFLAÇÃO**:
@@ -1157,16 +1190,12 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
 
-</br>
-
 
 - **DESINFLAÇÃO**:
 
   - A desinflação corresponde a uma diminuição nas taxas de aumentos dos níveis de preço (os preços 
   começam a aumentar de maneira menos acelerada);
 
-
-</br>
 
 
 - **DEFLAÇÃO**:
@@ -1305,9 +1334,6 @@ widgetframe::frameWidget(acum_ano, width = '100%', height = '100%')
 
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
-
-- Os itens do IPCA também podem ser "agrupados" a partir de outra estrutura, conforme segue:
-
 - **PREÇOS MONITORADOS (OU ADMINISTRADOS)**: O conjunto dos itens com preços administrados inclui 
 impostos e taxas (IPVA, IPTU e taxa de água e esgoto), serviços de utilidade pública cujas tarifas 
 são reguladas ou autorizadas pelo poder público por meio de agências reguladoras ou fiscalizadoras 
@@ -1394,11 +1420,6 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
-
-- Por sua vez, os preços livres também podem ser dividios de acordo com o grau de comercialização 
-com o resto do mundo.
-
-
 - **COMERCIALIZÁVEIS**:
 
   - alimentos industrializados e semi-elaborados, artigos de limpeza, higiene e beleza, mobiliário, 
@@ -1410,9 +1431,7 @@ com o resto do mundo.
 
   - produtos in natura, alimentação fora do domicílio, aluguel, linha telefônica, habitação-despesas
   operacionais, veículos-seguro/reparos/lavagem/estacionamento, recreação e cultura, matrícula e 
-  mensalidade escolar, livros didáticos, serviços médicos e serviços pessoais.Monitorados: serviços 
-  públicos e residenciais, transporte público, combustíveis, plano de saúde, pedágio, licenciamento 
-  e empregado doméstico.
+  mensalidade escolar, livros didáticos, serviços médicos e serviços pessoais e preços monitorados.
 
 
 
@@ -1503,9 +1522,6 @@ name: causas_inflacao
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
 
 
-</br>
-
-
 - Pode-se elencar alguns fatores para aumento do nível de preços (generalizado e consistente), 
 principalmente:
 
@@ -1514,9 +1530,6 @@ principalmente:
  - **Choque de Oferta**;
  - **Inflação Inercial**.
  
- 
- </br>
-
 
 - Todos os fatores referidos acima podem, inclusive, ocorrer simultaneamente. Em maior ou menor 
 impacto de cada um deles.
@@ -1530,9 +1543,6 @@ impacto de cada um deles.
 
 
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-</br>
 
 - **Inflação de Demanda**: Quando a economia está “muito aquecida” (nível alto de consumo) os 
 produtores tendem a aumentar os preços dos bens objetivando obter maior nível de lucro.
@@ -1559,9 +1569,6 @@ knitr::include_graphics('demanda.png', dpi = 300)
 
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
 
-
-</br>
-
 - **Inflação de Custos**: Quando o sistema produtivo é ineficiente, os custos de produção são 
 inerentemente maiores. Estes custos de produção são repassados aos bens finais. 
 
@@ -1586,9 +1593,6 @@ knitr::include_graphics('custos.png', dpi = 300)
 
 
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-</br>
 
 - **Choque de Oferta**: Quando um fator inesperado (exógeno) causa uma diminuição no nível de 
 produção e/ou oferta. Com menor quantidade do bem no mercado, seu preço aumenta.
@@ -1616,8 +1620,6 @@ knitr::include_graphics('choque_oferta.png', dpi = 300)
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
 
 
-</br>
-
 
 - **Inflação Inercial**: Quando a inflação de um período é repassada contratualmente para o período 
 posterior devido as expectativas dos agentes de permanência da inflação.
@@ -1643,9 +1645,6 @@ knitr::include_graphics('inercial.png', dpi = 300)
 
 
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-</br>
 
 
 
