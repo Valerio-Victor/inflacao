@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>TEMA01 - TAXA DE INFLAÇÃO</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Victor Valerio" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+    <script src="libs/mark.js-8.11.1/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search-0.0.1/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search-0.0.1/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+    <script src="libs/pymjs-1.3.2/pym.v1.js"></script>
+    <script src="libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# TEMA01 - TAXA DE INFLAÇÃO
+]
+.subtitle[
+## ECN001 - IEPG20
+]
+.author[
+### Prof. Dr. Victor Valerio
+]
+.institute[
+### UNIVERSIDADE FEDERAL DE ITAJUBÁ
+]
+.date[
+### Última Atualização: 06-12-2022
+]
+
+---
+
+
+
+
+
+## TÓPICOS ABORDADOS
+
+
+&lt;/br&gt;
+
+
+- [**Introdução**](#introducao)
+
+
+- [**Conceito de Inflação**](#conceitoipca)
+
+
+- [**Causas e Consequências de Inflação**](#causas_inflacao)
+
+
+---
+class: inverse, center, middle 
+name: introducao
+
+
+## INTRODUÇÃO
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-8291e572d735aec4827f" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8291e572d735aec4827f">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-9e6ebb370d1ea7e86bc4" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9e6ebb370d1ea7e86bc4">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**REVISÃO DE CONCEITOS**
+  
+- Nós já sabemos como calcular um número índice a partir de qualquer série de dados, como no exemplo
+já apresentado ainda na aula de Fluxo Circular da Renda:
+  
+
+&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; VALORES &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; TRANSFORMAÇÕES &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; ÍNDICES &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 12.589 = 100 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 100 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 13.785 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 13.785 x 100/ R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 109,50 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 13.947 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 13.947 x 100/ R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 110,79 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 14.125 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 14.125 x 100/ R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 112,20 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 15.352 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 15.352 x 100/ R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 121,95 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 16.756 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 16.756 x 100/ R$ 12.589 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 133,10 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+- Mas e se nós quiséssemos calcular um índice único representativo de diferentes variáveis?
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+  
+- Problema prático com duas variáveis. Qual procedimento deveria ser aplicado para criar um índice 
+único representativo das duas colunas de valores (que, por sua vez, representam duas variáveis):
+
+
+&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+- Uma proposta inicial seria somar as duas variáveis (A e B) para, então, transformar a série criada
+a partir da soma em um número índice.
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+  
+- Abaixo são apresentados cada um dos passos a serem tomados:
+
+
+&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; SOMA &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; TRANSFORMAÇÃO &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; ÍNDICE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 105 = 100 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 100.00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 120 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 120 x 100/ R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 114.29 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 141 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 141 x 100/ R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 134.29 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 173.11 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 173.11 x 100/ R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 164.86 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 226.14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 226.14 x 100/ R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 215.63 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 321.10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 321.10 x 100/ R$ 105 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 305.76 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+- O número índice criado não é representativo da série (pois a variável A, de maior valor, possui
+maior "influência" no cálculo da variação percentual).
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+  
+- Uma boa maneira seria ponderar a importância de cada uma das variáveis a partir de algum critério,
+por exemplo, como são preços de produtos, pode-se adotar como termo de ponderação a quantidade 
+consumida:
+
+
+&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; QA &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; QB &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; SOMA &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; ÍNDICE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 22 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 100 x 2 +  R$ 5 x 22 = 310 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 100.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 22,3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 110 x 2 +  R$ 10 x 22,3 = 443 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 142.9 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2,2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 23,4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 121 x 2,2 +  R$ 20 x 23,4 = 734,2 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 236.8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2,5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 133,1 x 2,5 +  R$ 40 x 21 = 1172,75 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 378.3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2,1 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 146,41 x 2,1 +  R$ 80 x 25 = 2307,46 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 744.3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2,8 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 26 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R$ 161,05 x 2,8 +  R$ 160 x 26 = 4610,94 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 1487.4 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+- Agora, como a variável de menor preço possui maior importância na destinação dos recursos familiares
+seu impacto é melhor representado pelo índice criado. De fato, é assim que é construído um **índice de
+preços**.
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+&lt;/br&gt;
+  
+- O Brasil possui diversos **índices de inflação** mensurados periodicamente, cada um com a sua
+finalidade, são exemplos:
+
+  - **Índice Nacional de Preços ao Consumidor (INPC)**: medir as variações de preços da cesta de 
+  consumo das populações assalariadas e com baixo rendimento;
+
+  - **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**: medir as variações de preços referentes 
+  ao consumo pessoal;
+  
+  
+- Neste curso vamos nos concentrar  no **IPCA**, entretanto, exceto especifidades de cálculos as 
+formas de análise são similares.
+
+  - O **IPCA** é um dos principais **índices de inflação**, visto que, corresponde a métrica utilizada pelo Banco Central do Brasil como **controle inflacionário** (metas de inflação);
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+&lt;/br&gt;
+
+- Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
+
+  - Efetua a produção contínua e sistemática de índices de preços ao consumidor, tendo como **unidade 
+  de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos
+  e domicílios (para levantamento de aluguel e condomínio)**; 
+  
+  - O período de coleta do IPCA estende-se, em geral, do dia **01 a 30 do mês de referência**;
+  
+  - A população-objetivo do IPCA abrange as famílias com rendimentos mensais compreendidos entre **1 
+  (um) e 40 (quarenta) salários-mínimos**, qualquer que seja a fonte de rendimentos, e residentes nas 
+  áreas urbanas das regiões.
+  
+  
+  
+  
+  
+  
+  
+  
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+
+
+**CONCEITOS**
+  
+
+- Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
+
+  - A periodicidade do **IPCA** é **mensal**;
+  
+  - Abrangendo as regiões metropolitanas de **Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Rio de     Janeiro, São Paulo, Curitiba, Vitória e Porto Alegre, Brasília e municípios de Goiânia e Campo Grande**.
+  
+  - É constituído de forma hierarquizada, sendo que, seu cômputo é divido grupos (9), subgrupos (19), 
+  itens (51) e subitens (377). 
+
+  - O peso de cada um desses grupos no índice cheio é definido mensalmente, de acordo com os gastos das  
+  famílias em diferentes bens e serviços. Estes gastos, por sua vez, são captados pela **Pesquisa de 
+  Orçamento Familiar (POF)**.
+
+
+
+
+
+  
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## INTRODUÇÃO
+  
+
+**CONCEITOS**
+
+
+- Desde agosto de 1999 são 9 grupos:
+
+  1) **Alimentos e Bebidas**;
+  
+  2) **Habitação**;
+  
+  3) **Artigos de Residência**;
+  
+  4) **Vestuário**;
+  
+  5) **Transportes**;
+  
+  6) **Comunicação**;
+  
+  7) **Saúde e Cuidados Pessoais**;
+  
+  8) **Despesas Pessoais**;
+  
+  9) **Educação**.
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-f960fad61adf48c501a5" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f960fad61adf48c501a5">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+---
+class: inverse, center, middle 
+name: conceitoipca
+
+
+## CONCEITO DE INFLAÇÃO
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CONCEITO DE INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- **INFLAÇÃO**:
+
+  - A Inflação corresponde a uma situação em que há um aumento generalizado e persistente no nível de 
+  preços (pode ser captada pelos índices de preços);
+
+
+&lt;/br&gt;
+
+
+- **HIPERINFLAÇÃO**:
+
+  - Costuma-se definir como hiperinflação o aumento generalizado e persistente no nível de preços que 
+  segue uma trajetória elevada e acelerada (não há um nível estrito para se definir a hiperinflação).
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA: INFLAÇÃO MENSAL "CHEIA"
+
+
+<div id="htmlwidget-24e667f9e06943db17af" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-24e667f9e06943db17af">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA: PESOS ÍNDICE INFLAÇÃO
+
+
+<div id="htmlwidget-97e0fc069213053b004e" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-97e0fc069213053b004e">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-d497f6426f23903f3df9" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d497f6426f23903f3df9">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CONCEITO ASSOCIADOS À INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- **DESINFLAÇÃO**:
+
+  - A desinflação corresponde a uma diminuição nas taxas de aumentos dos níveis de preço (os preços 
+  começam a aumentar de maneira menos acelerada);
+
+
+&lt;/br&gt;
+
+
+- **DEFLAÇÃO**:
+
+  - A deflação corresponde a uma situação em que há uma diminuição generalizada e persistente no 
+  nível de preços (repare que a definição de deflação depende da persistência).
+
+  
+  
+
+
+
+
+  
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-08ebc2aa17485d775388" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-08ebc2aa17485d775388">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-7e53752def8f935fc847" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7e53752def8f935fc847">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CONCEITO ASSOCIADOS À INFLAÇÃO
+
+
+- Os itens do IPCA também podem ser "agrupados" a partir de outra estrutura, conforme segue:
+
+- **PREÇOS MONITORADOS (OU ADMINISTRADOS)**: O conjunto dos itens com preços administrados inclui 
+impostos e taxas (IPVA, IPTU e taxa de água e esgoto), serviços de utilidade pública cujas tarifas 
+são reguladas ou autorizadas pelo poder público por meio de agências reguladoras ou fiscalizadoras 
+(telefonia, energia elétrica, planos de saúde, pedágio), derivados de petróleo cujo mercado está em 
+processo de liberalização, mas tem como virtual formadora de preço uma empresa estatal, e itens cujos
+preços podem ser considerados virtualmente livres (álcool e passagens aéreas);
+
+- **PREÇOS LIVRES (OU DE MERCADO)**: O conjunto dos itens com preços formados a partir de fatores 
+de oferta e demanda.
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-0fd4a5cc47411c0b324f" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0fd4a5cc47411c0b324f">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CONCEITO ASSOCIADOS À INFLAÇÃO
+
+
+- Por sua vez, os preços livres também podem ser dividios de acordo com o grau de comercialização 
+com o resto do mundo.
+
+
+- **COMERCIALIZÁVEIS**:
+
+  - alimentos industrializados e semi-elaborados, artigos de limpeza, higiene e beleza, mobiliário, 
+  utensílios domésticos, equipamentos eletro-eletrônicos, aquisição de veículos, cama/mesa/banho, 
+  fumo e bebidas, vestuário, remédios e material escolar;
+
+
+- **NÃO-COMERCIALIZÁVEIS**:
+
+  - produtos in natura, alimentação fora do domicílio, aluguel, linha telefônica, habitação-despesas
+  operacionais, veículos-seguro/reparos/lavagem/estacionamento, recreação e cultura, matrícula e 
+  mensalidade escolar, livros didáticos, serviços médicos e serviços pessoais.Monitorados: serviços 
+  públicos e residenciais, transporte público, combustíveis, plano de saúde, pedágio, licenciamento 
+  e empregado doméstico.
+
+
+
+
+
+
+
+
+---
+
+
+## O BRASIL EM PERSPECTIVA
+
+
+<div id="htmlwidget-bae9fa016effa179475c" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bae9fa016effa179475c">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+class: inverse, center, middle 
+name: causas_inflacao
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- Pode-se elencar alguns fatores para aumento do nível de preços (generalizado e consistente), 
+principalmente:
+
+ - **Inflação de Demanda**;
+ - **Inflação de Custos**;
+ - **Choque de Oferta**;
+ - **Inflação Inercial**.
+ 
+ 
+ &lt;/br&gt;
+
+
+- Todos os fatores referidos acima podem, inclusive, ocorrer simultaneamente. Em maior ou menor 
+impacto de cada um deles.
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+- **Inflação de Demanda**: Quando a economia está “muito aquecida” (nível alto de consumo) os 
+produtores tendem a aumentar os preços dos bens objetivando obter maior nível de lucro.
+
+
+&lt;img src="demanda.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+- **Inflação de Custos**: Quando o sistema produtivo é ineficiente, os custos de produção são 
+inerentemente maiores. Estes custos de produção são repassados aos bens finais. 
+
+
+&lt;img src="custos.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+- **Choque de Oferta**: Quando um fator inesperado (exógeno) causa uma diminuição no nível de 
+produção e/ou oferta. Com menor quantidade do bem no mercado, seu preço aumenta.
+
+
+&lt;img src="choque_oferta.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- **Inflação Inercial**: Quando a inflação de um período é repassada contratualmente para o período 
+posterior devido as expectativas dos agentes de permanência da inflação.
+
+
+&lt;img src="inercial.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+
+- Para se **combater a inflação** existem, pelo menos, três grupos de **políticas**:
+
+  - **Modificações Legais e Institucionais**: Diminuição da indexação de preços de bens finais; 
+  diminuição dos preços dos fatores de produção; 
+
+  - **Modificações Estruturais**: Redução da quantidade de moeda em circulação; Redução do déficit 
+  público; Aumento da taxa de juros;
+
+  - **Modificações Inerciais**: Alteração nas expectativas dos agentes.
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- Também devido a inflação, **não se pode comparar valores monetários de maneira direta** (chamados 
+**valores nominais**);
+
+
+&lt;/br&gt;
+
+
+- Esta comparação direta é definida como **ilusão monetária**.
+
+
+
+
+
+
+
+
+---
+&lt;div style="text-align: justify"&gt;
+
+
+## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
+
+
+&lt;/br&gt;
+
+
+- Assim, valores monetários diferentes representam "poderes de compra" diferentes de acordo com os 
+períodos e/ou regiões analisadas;
+
+
+&lt;/br&gt;
+
+
+- Neste sentido, **é necessário realizar uma "correção monetária"** de modo que os **valores nominais**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
